@@ -1,0 +1,536 @@
+* { box-sizing: border-box; }
+
+/* ---- button ---- */
+
+.button {
+	display: inline-block;
+	padding: 0.3em .9em;
+	margin-top: 7px;
+	background: #efefef;
+	border: solid 1px #E51600;
+	color: #E51600;
+	cursor: pointer;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 23px;
+	letter-spacing: .07em;
+	text-transform: uppercase;
+	outline: none; 
+}
+
+.button:hover {
+	background-color: #c9c9c9;
+	color: #E51600;
+	transition: all .15s ease-in-out;
+	-webkit-transition: all .15s ease-in-out;
+}
+
+.button:active,
+.button.is-checked {
+	background-color: #E51600;
+}
+
+.button.is-checked {
+	color: white;
+}
+
+.button:active {
+	background-color: #bfbfbf;
+	color: #353535;
+}
+
+/* ---- button-group ---- */
+
+.button-group:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.button-group .button {
+	float: left;
+	border-radius: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+/*
+hide buttons on small screens*/
+@media only screen  and (min-width : 0px) and (max-width : 1190px) {
+	.button-group {
+		display: none;
+	}
+}
+
+/*.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
+.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }*/
+
+/* ---- grid ---- */
+
+.grid {
+	max-width: 100%;
+	max-height: 100%;
+	margin-left: 0;
+	margin-top: 25px;
+}
+
+/* clear fix */
+.grid:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* ---- .element-item ---- */
+
+@media only screen  and (max-width : 1823px) {
+	.element-item {
+		position: relative;
+		float: left;
+		width: 83px;
+		height: 52px;
+		margin: 3px 3px 3px 3px;
+		padding: 1px;
+	}
+	.element-item .abbr {
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding-top: 15px;
+		width: 83px;
+		height: 52px;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: .075em;
+		color: #ffffff; 
+		text-shadow: 2px 2px 8px rgba(0,0,0,.05);
+		background: rgba(0,0,0,.4);
+	}
+}
+@media only screen  and (min-width : 1824px) {
+	.element-item {
+		position: relative;
+		float: left;
+		width: 125px;
+		height: 78px;
+		margin: 4px 4px 4px 4px;
+		padding: 1px;
+	}
+	.element-item .abbr {
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding-top: 27px;
+		width: 125px;
+		height: 78px;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: .075em;
+		color: #ffffff; 
+		text-shadow: 2px 2px 8px rgba(0,0,0,.05);
+		background: rgba(0,0,0,.4);
+				font-size: 16px;
+		line-height: 26px;
+	}
+
+}
+
+@media only screen and (min-width : 0px) and (max-width : 400px)  {
+	.element-item {
+		margin: calc(16.7% - 42px);
+	}
+}
+@media only screen and (min-width : 401px) and (max-width : 495px)  {
+	.element-item {
+		margin: calc(12.5% - 42px);
+	}
+}
+@media only screen and (min-width : 496px) and (max-width : 592px)  {
+	.element-item {
+		margin: calc(10% - 42px);
+	}
+}
+@media only screen and (min-width : 593px) and (max-width : 690px)  {
+	.element-item {
+		margin: calc(8.34% - 42px);
+	}
+}
+@media only screen and (min-width : 691px) and (max-width : 790px)  {
+	.element-item {
+		margin: calc(7.14% - 42px);
+	}
+}
+@media only screen and (min-width : 791px) and (max-width : 890px)  {
+	.element-item {
+		margin: calc(6.25% - 42px);
+	}
+}
+@media only screen and (min-width : 891px) and (max-width : 986px)  {
+	.element-item {
+		margin: calc(5.56% - 42px);
+	}
+}
+@media only screen and (min-width : 987px) and (max-width : 1086px)  {
+	.element-item {
+		margin: calc(5% - 42px);
+	}
+}
+@media only screen and (min-width : 1087px) and (max-width : 1187px)  {
+	.element-item {
+		margin: calc(4.55% - 42px);
+	}
+}
+.element-item > * {
+	margin: 0;
+	padding: 0;
+}
+
+.element-item .name {
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-transform: uppercase;
+	letter-spacing: 0;
+	color: #ffffff;
+	display: none;
+}
+
+
+
+a .abbr {
+	opacity: 0;
+	transition: all .15s ease-in-out;
+	-webkit-transition: all .15s ease-in-out;
+}
+
+a:hover .abbr {
+	opacity: 1;
+}
+
+@media only screen and (min-device-width : 320px) and (max-width : 1223px)  {
+	a .abbr {
+		opacity: 1;
+	}
+	.element-item .abbr {
+		text-shadow: 2px 2px 8px rgba(0,0,0,.07);
+		background: rgba(0,0,0,.2);
+	}
+}
+
+.ak {
+	background-image: url("../assets/alaska.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.al {
+	background-image: url("../assets/alabama.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.az {
+	background-image: url("../assets/arizona.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ar {
+	background-image: url("../assets/arkansas.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ca {
+	background-image: url("../assets/california.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.co {
+	background-image: url("../assets/colorado.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ct {
+	background-image: url("../assets/connecticut.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.de {
+	background-image: url("../assets/delaware.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.fl {
+	background-image: url("../assets/florida.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ga {
+	background-image: url("../assets/georgia.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hi {
+	background-image: url("../assets/hawaii.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.id {
+	background-image: url("../assets/idaho.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.il {
+	background-image: url("../assets/illinois.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.in {
+	background-image: url("../assets/indiana.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ia {
+	background-image: url("../assets/iowa.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ks {
+	background-image: url("../assets/kansas.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ky {
+	background-image: url("../assets/kentucky.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.la {
+	background-image: url("../assets/louisiana.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.me {
+	background-image: url("../assets/maine.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.md {
+	background-image: url("../assets/maryland.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ma {
+	background-image: url("../assets/massachusetts.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.mi {
+	background-image: url("../assets/michigan.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.mn {
+	background-image: url("../assets/minnesota.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ms {
+	background-image: url("../assets/mississippi.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.mo {
+	background-image: url("../assets/missouri.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.mt {
+	background-image: url("../assets/montana.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ne {
+	background-image: url("../assets/nebraska.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.nv {
+	background-image: url("../assets/nevada.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.nh {
+	background-image: url("../assets/new-hampshire.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.nj {
+	background-image: url("../assets/new-jersey.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.nm {
+	background-image: url("../assets/new-mexico.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ny {
+	background-image: url("../assets/new-york.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.nc {
+	background-image: url("../assets/north-carolina.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.nd {
+	background-image: url("../assets/north-dakota.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.oh {
+	background-image: url("../assets/ohio.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ok {
+	background-image: url("../assets/oklahoma.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.or {
+	background-image: url("../assets/oregon.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.pa {
+	background-image: url("../assets/pennsylvania.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ri {
+	background-image: url("../assets/rhode-island.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.sc {
+	background-image: url("../assets/south-carolina.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.sd {
+	background-image: url("../assets/south-dakota.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.tn {
+	background-image: url("../assets/tennessee.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.tx {
+	background-image: url("../assets/texas.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ut {
+	background-image: url("../assets/utah.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.vt {
+	background-image: url("../assets/vermont.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.va {
+	background-image: url("../assets/virginia.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.wa {
+	background-image: url("../assets/washington.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.wv {
+	background-image: url("../assets/west-virginia.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.wi {
+	background-image: url("../assets/wisconsin.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.wy {
+	background-image: url("../assets/wyoming.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.dc {
+	background-image: url("../assets/dc.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,252 @@
+body {
+	padding: 0; 
+	margin: 0;
+	background-color: #efefef;
+	overflow-x: hidden;
+	opacity: 0;
+	-webkit-font-smoothing: antialiased;
+} 
+
+::-moz-selection { 
+	background: #E51600; 
+	color: #efefef;
+}
+::selection { 
+	background: #E51600; 
+	color: #efefef;
+}
+
+.header-div {
+	position: fixed;
+	height: 100vh;
+	width: 100%;
+}
+
+.body-div {
+	background-color: #efefef;
+	width: 100%;
+	position: absolute;
+	margin-top: 100vh;
+	padding-top: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-aspect-ratio: 8/5) {
+	.header-div {
+		height: 56.25vw;
+	}
+	.body-div {
+		margin-top: 56.25vw;
+	}
+}
+
+
+
+#navBar{
+	z-index: 100;
+	position: absolute;
+	width: 100%;
+	height: 60px;
+	background-color: #efefef;
+}
+
+.footer-div {
+	background-color: #E51600;
+	width: 100%;
+	margin-top: 35px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+
+.site-wrapper {
+	width: 1080px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: visible;
+}
+
+.header-bg-overlay {
+	position: fixed;
+	left: 0;
+	width: 100vw;
+	height: 100%;
+	background-color: rgba(0,0,0,.1);
+}
+
+.header-bg {
+	position: fixed;
+	left: 0;
+	width: 100vw;
+	height: 100%;
+	background-color: none;
+}
+
+.header-wrapper {
+	height: 100vh;
+}
+
+.hero-title {
+	position: absolute;
+	top: 0;
+}
+
+.hero-subtitle {
+	position: absolute;
+	bottom: 4.5vw;
+}
+
+/*Typography*/
+
+a {
+	color: inherit;
+	text-decoration: none;
+	border-bottom: .5px solid;
+}
+
+h1 {
+	font-family: 'Six Caps', sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 23vw;
+	line-height: 0;
+	color: rgba(255,255,255,1); 
+	letter-spacing: -.015em;
+	text-shadow: 2px 2px 8px rgba(0,0,0,.05); 
+	text-align: center;
+	margin-left: -1vw;
+}
+
+
+h2 {
+	font-family: 'Yantramanav', sans-serif;
+	font-weight: 400;
+	font-size: 1.7vw;
+	line-height:2.3vw;
+	text-align: left;
+	color: #FFFFFF; 
+	text-shadow: 2px 2px 8px rgba(0,0,0,.05); 
+	width: 15em;
+}
+
+h3 {
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 23px;
+	letter-spacing: .07em;
+	text-transform: uppercase;
+	text-align: left;
+	color: #E51600;
+}
+
+h4 {
+	font-family: 'Yantramanav', sans-serif;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 36px;
+	text-align: center;
+	color: #E51600;
+}
+
+h4.nav-bar {
+	color: #E51600;
+	font-size: 44px; 
+	letter-spacing: .02em;
+	text-transform: uppercase;
+	font-family: 'Six Caps', sans-serif;
+	margin-top: .2em;
+}
+
+h4 a {
+	text-decoration: none !important;
+}
+
+h5 {
+	font-family: 'Yantramanav', sans-serif;
+	font-weight: 400;
+	font-size: 27px;
+	line-height: 37px;
+	text-align: left;
+	color: #353535;
+	padding: 0;
+	margin: 1em 0 1em 0;
+}
+
+h6 a {
+	text-decoration: none !important;
+}
+
+/*h5 {
+	font-family: 'Roboto Mono', monospace;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 25px;
+	color: #E51600;
+	margin-top: .75em;
+	}*/
+
+	p {
+		font-family: 'Yantramanav', sans-serif;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 31px;
+		color: #353535;
+	}
+
+	.subtitle {
+		margin-top: -30px;
+	}
+
+
+
+	.body-text {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.body-text2 {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	button.explore {
+		margin-top: 2vw;
+		border: 1px solid #ffffff;
+		color: #ffffff;
+		background-color: rgba(0,0,0,0);
+		width: 120px;
+		height: 49px;
+		font-family: 'Roboto Mono', monospace;
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 23px;
+		letter-spacing: .07em;
+		text-transform: uppercase;
+		text-align: center;
+		-webkit-transition: all 120ms ease-in;
+		-moz-transition: all 120ms ease-in;
+		-ms-transition: all 120ms ease-in;
+		-o-transition: all 120ms ease-in;
+		transition: all 120ms ease-in;
+		outline:none;
+	}
+
+	button.explore:hover {
+		border: 1px solid #ffffff;
+		background-color: #ffffff;
+		color: #707070;
+		cursor: pointer;
+	}
+	hr.home {
+		border: 0;
+		border-bottom: 0;
+		border-top: 5px solid #E51600;
+		padding: 5px;
+		width: 8vw;
+	}
+
+
+

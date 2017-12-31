@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="What if the US flags were based on data?">
+  <meta name="keywords" content="olivia johnson, true colors, flags, data visualization, data viz, graphic design, design, america, state flags">
+  <meta name="author" content="Olivia Johnson">
+
+  <title>True Colors</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link href="css/data.css" rel="stylesheet">
+  <link href="css/flags.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/flags-responsive.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Yantramanav:400,700|Roboto+Mono:300,400,700|Six+Caps" rel="stylesheet">
+
+  <script src="libraries/p5.js" type="text/javascript"></script>
+  <script src="libraries/p5.dom.js" type="text/javascript"></script>
+  
+
+  <script src="sketch2.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script> 
+  <script src="jquery.marquee.min.js"></script>
+  <script src="jquery.marquee.js"></script>
+  <script type='text/javascript' src='//cdn.jsdelivr.net/jquery.marquee/1.3.9/jquery.marquee.min.js'></script>
+  <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <!-- <script src="/node_modules/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="node_modules/isotope-layout/dist/isotope.pkgd.js"></script> -->
+    <link href="css/isotope.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="header-bg">
+    </div>
+    <div class="header-bg-overlay">
+    </div>
+    <div class="site-wrapper">
+      <div class="header-div">
+        <div class="header-wrapper">
+          <div class="hero-title">
+            <h1>True Colors</h1>
+          </div>
+          <div class="hero-subtitle">
+            <h2>How do the 51 state flags look when data decides their designs?</h2>
+            <button class="explore">
+              Explore
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="body-div">
+      <div class="site-wrapper">
+        <div class="section group">
+          <div id="navBar">
+              <a href="index.html" style="text-decoration: none;"><h4 class="nav-bar">True Colors</h4></a>
+            </div>
+          </div>
+          <div class="section group top-margin">
+            <div class="col span_1_of_8"></div>
+            <div class="col span_6_of_8">
+              <h5 style="color: #E51600; text-align: center;">A visual experiment that evaluates the evolving graphic symbolism of the United States, True Colors is a collection of flags generated from the 2016 American Community Survey. Each flag is based on data specific to its state, and provides information at a glance. 
+              </h5>
+            </div>
+          </div>
+          <a name="map">
+          <hr class="home">
+          <div class="section group">
+            <div class="col span_8_of_8">
+              <div class="grid">
+                <a href="ak.html">
+                  <div class="element-item ak" data-category="state">
+                   <h3 class="name">Alaska</h3>
+                   <h3 class="abbr">ak</h3>
+                 </div>
+               </a>
+               <div class="element-item zero" data-category="blank">
+                 <h3 class="name">zero</h3>
+               </div>
+               <div class="element-item zero" data-category="blank">
+                 <h3 class="name">zero</h3>
+               </div>
+               <div class="element-item zero" data-category="blank">
+                 <h3 class="name">zero</h3>
+               </div>
+               <div class="element-item zero" data-category="blank">
+                 <h3 class="name">zero</h3>
+               </div>
+               <div class="element-item zero" data-category="blank">
+                 <h3 class="name">zero</h3>
+               </div>
+               <div class="element-item zero" data-category="blank">
+                 <h3 class="name">zero</h3>
+               </div>
+               <div class="element-item zero" data-category="blank">
+                 <h3 class="name">zero</h3>
+               </div>
+               <div class="element-item zero" data-category="blank">
+                 <h3 class="name">zero</h3>
+               </div>
+               <div class="element-item zero" data-category="blank">
+                 <h3 class="name">zero</h3>
+               </div>
+               <div class="element-item zero" data-category="blank">
+                 <h3 class="name">zero</h3>
+               </div>
+               <a href="me.html">
+                <div class="element-item me" data-category="state">
+                  <h3 class="name">Maine</h3>
+                  <h3 class="abbr">me</h3>
+                </div>
+              </a>
+              <div class="element-item zero" data-category="blank">
+               <h3 class="name">zero</h3>
+             </div>
+             <div class="element-item zero" data-category="blank">
+               <h3 class="name">zero</h3>
+             </div>
+             <div class="element-item zero" data-category="blank">
+               <h3 class="name">zero</h3>
+             </div>
+             <div class="element-item zero" data-category="blank">
+               <h3 class="name">zero</h3>
+             </div>
+             <div class="element-item zero" data-category="blank">
+               <h3 class="name">zero</h3>
+             </div>
+             <div class="element-item zero" data-category="blank">
+               <h3 class="name">zero</h3>
+             </div>
+             <a href="wi.html">
+              <div class="element-item wi" data-category="state">
+                <h3 class="name">Wisconsin</h3>
+                <h3 class="abbr">wi</h3>
+              </div>
+            </a>
+            <div class="element-item zero" data-category="blank">
+             <h3 class="name">zero</h3>
+           </div>
+           <div class="element-item zero" data-category="blank">
+             <h3 class="name">zero</h3>
+           </div>
+           <div class="element-item zero" data-category="blank">
+             <h3 class="name">zero</h3>
+           </div>
+           <a href="vt.html">
+            <div class="element-item vt" data-category="state">
+              <h3 class="name">Vermont</h3>
+              <h3 class="abbr">vt</h3>
+            </div>
+          </a>
+          <a href="nh.html">
+            <div class="element-item nh" data-category="state">
+              <h3 class="name">New Hampshire</h3>
+              <h3 class="abbr">nh</h3>
+            </div>
+          </a>
+          <div class="element-item zero" data-category="blank">
+           <h3 class="name">zero</h3>
+         </div>
+         <a href="wa.html">
+          <div class="element-item wa" data-category="state">
+            <h3 class="name">Washington</h3>
+            <h3 class="abbr">wa</h3>
+          </div>
+        </a>
+        <a href="id.html">
+          <div class="element-item id" data-category="state">
+            <h3 class="name">Idaho</h3>
+            <h3 class="abbr">id</h3>
+          </div>
+        </a>
+        <a href="mt.html">
+          <div class="element-item mt" data-category="state">
+            <h3 class="name">Montana</h3>
+            <h3 class="abbr">mt</h3>
+          </div>
+        </a>
+        <a href="nd.html">
+          <div class="element-item nd" data-category="state">
+            <h3 class="name">North Dakota</h3>
+            <h3 class="abbr">nd</h3>
+          </div>
+        </a>
+        <a href="mn.html">
+          <div class="element-item mn" data-category="state">
+            <h3 class="name">Minnesota</h3>
+            <h3 class="abbr">mn</h3>
+          </div>
+        </a>
+        <a href="il.html">
+          <div class="element-item il" data-category="state">
+            <h3 class="name">Illinois</h3>
+            <h3 class="abbr">il</h3>
+          </div>
+        </a>
+        <a href="mi.html">
+          <div class="element-item mi" data-category="state">
+            <h3 class="name">Michigan</h3>
+            <h3 class="abbr">mi</h3>
+          </div>
+        </a>
+        <div class="element-item zero" data-category="blank">
+         <h3 class="name">zero</h3>
+       </div>
+       <a href="ny.html">
+        <div class="element-item ny" data-category="state">
+          <h3 class="name">New York</h3>
+          <h3 class="abbr">ny</h3>
+        </div>
+      </a>
+      <a href="ma.html">
+        <div class="element-item ma" data-category="state">
+          <h3 class="name">Massachusetts</h3>
+          <h3 class="abbr">ma</h3>
+        </div>
+      </a>
+      <div class="element-item zero" data-category="blank">
+       <h3 class="name">zero</h3>
+     </div>
+     <div class="element-item zero" data-category="blank">
+       <h3 class="name">zero</h3>
+     </div>
+     <a href="or.html">
+      <div class="element-item or" data-category="state">
+       <h3 class="name">Oregon</h3>
+       <h3 class="abbr">or</h3>
+     </div>
+   </a>
+   <a href="nv.html">
+    <div class="element-item nv" data-category="state">
+     <h3 class="name">Nevada</h3>
+     <h3 class="abbr">nv</h3>
+   </div>
+ </a>
+ <a href="wy.html">
+  <div class="element-item wy" data-category="state">
+   <h3 class="name">Wyoming</h3>
+   <h3 class="abbr">wy</h3>
+ </div>
+</a>
+<a href="sd.html">
+  <div class="element-item sd" data-category="state">
+   <h3 class="name">South Dakota</h3>
+   <h3 class="abbr">sd</h3>
+ </div>
+</a>
+<a href="ia.html">
+  <div class="element-item ia" data-category="state">
+   <h3 class="name">Iowa</h3>
+   <h3 class="abbr">ia</h3>
+ </div>
+</a>
+<a href="in.html">
+  <div class="element-item in" data-category="state">
+   <h3 class="name">Indiana</h3>
+   <h3 class="abbr">in</h3>
+ </div>
+</a>
+<a href="oh.html">
+  <div class="element-item oh" data-category="state">
+   <h3 class="name">Ohio</h3>
+   <h3 class="abbr">oh</h3>
+ </div>
+</a>
+<a href="pa.html">
+  <div class="element-item pa" data-category="state">
+   <h3 class="name">Pennsylvania</h3>
+   <h3 class="abbr">pa</h3>
+ </div>
+</a>
+<a href="nj.html">
+  <div class="element-item nj" data-category="state">
+   <h3 class="name">New Jersey</h3>
+   <h3 class="abbr">nj</h3>
+ </div>
+</a>
+<a href="ct.html">
+  <div class="element-item ct" data-category="state">
+   <h3 class="name">Connecticut</h3>
+   <h3 class="abbr">ct</h3>
+ </div>
+</a>
+<a href="ri.html">
+  <div class="element-item ri" data-category="state">
+   <h3 class="name">Rhode Island</h3>
+   <h3 class="abbr">ri</h3>
+ </div>
+</a>
+<div class="element-item zero" data-category="state">
+ <h3 class="name">zero</h3>
+</div>
+<a href="ca.html">
+  <div class="element-item ca" data-category="state">
+   <h3 class="name">California</h3>
+   <h3 class="abbr">ca</h3>
+ </div>
+</a>
+<a href="ut.html">
+  <div class="element-item ut" data-category="state">
+   <h3 class="name">Utah</h3>
+   <h3 class="abbr">ut</h3>
+ </div>
+</a>
+<a href="co.html">
+  <div class="element-item co" data-category="state">
+   <h3 class="name">Colorado</h3>
+   <h3 class="abbr">co</h3>
+ </div>
+</a>
+<a href="ne.html">
+  <div class="element-item ne" data-category="state">
+   <h3 class="name">Nebraska</h3>
+   <h3 class="abbr">ne</h3>
+ </div>
+</a>
+<a href="mo.html">
+  <div class="element-item mo" data-category="state">
+   <h3 class="name">Missouri</h3>
+   <h3 class="abbr">mo</h3>
+ </div>
+</a>
+<a href="ky.html">
+  <div class="element-item ky" data-category="state">
+   <h3 class="name">Kentucky</h3>
+   <h3 class="abbr">ky</h3>
+ </div>
+</a>
+<a href="wv.html">
+  <div class="element-item wv" data-category="state">
+   <h3 class="name">West Virginia</h3>
+   <h3 class="abbr">wv</h3>
+ </div>
+</a>
+<a href="va.html">
+  <div class="element-item va" data-category="state">
+   <h3 class="name">Virginia</h3>
+   <h3 class="abbr">va</h3>
+ </div>
+</a>
+<a href="md.html">
+  <div class="element-item md" data-category="state">
+   <h3 class="name">Maryland</h3>
+   <h3 class="abbr">md</h3>
+ </div>
+</a>
+<a href="de.html">
+  <div class="element-item de" data-category="state">
+   <h3 class="name">Delaware</h3>
+   <h3 class="abbr">de</h3>
+ </div>
+</a>
+<div class="element-item zero" data-category="blank">
+ <h3 class="name">zero</h3>
+</div>
+<div class="element-item zero" data-category="blank">
+ <h3 class="name">zero</h3>
+</div>
+<div class="element-item zero" data-category="blank">
+ <h3 class="name">zero</h3>
+</div>
+<a href="az.html">
+  <div class="element-item az" data-category="state">
+   <h3 class="name">Arizona</h3>
+   <h3 class="abbr">az</h3>
+ </div>
+</a>
+<a href="nm.html">
+  <div class="element-item nm" data-category="state">
+   <h3 class="name">New Mexico</h3>
+   <h3 class="abbr">nm</h3>
+ </div>
+</a>
+<a href="ks.html">
+  <div class="element-item ks" data-category="state">
+   <h3 class="name">Kansas</h3>
+   <h3 class="abbr">ks</h3>
+ </div>
+</a>
+<a href="ar.html">
+  <div class="element-item ar" data-category="state">
+   <h3 class="name">Arkansas</h3>
+   <h3 class="abbr">ar</h3>
+ </div>
+</a>
+<a href="tn.html">
+  <div class="element-item tn" data-category="state">
+   <h3 class="name">Tennessee</h3>
+   <h3 class="abbr">tn</h3>
+ </div>
+</a>
+<a href="nc.html">
+  <div class="element-item nc" data-category="state">
+   <h3 class="name">North Carolina</h3>
+   <h3 class="abbr">nc</h3>
+ </div>
+</a>
+<a href="sc.html">
+  <div class="element-item sc" data-category="state">
+   <h3 class="name">South Carolina</h3>
+   <h3 class="abbr">sc</h3>
+ </div>
+</a>
+<a href="dc.html">
+  <div class="element-item dc" data-category="state">
+   <h3 class="name">District of Columbia</h3>
+   <h3 class="abbr">dc</h3>
+ </div>
+</a>
+<div class="element-item zero" data-category="blank">
+ <h3 class="name">zero</h3>
+</div>
+<div class="element-item zero" data-category="blank">
+ <h3 class="name">zero</h3>
+</div>
+<div class="element-item zero" data-category="blank">
+ <h3 class="name">zero</h3>
+</div>
+<div class="element-item zero" data-category="blank">
+ <h3 class="name">zero</h3>
+</div>
+<div class="element-item zero" data-category="blank">
+ <h3 class="name">zero</h3>
+</div>
+<div class="element-item zero" data-category="blank">
+ <h3 class="name">zero</h3>
+</div>
+<a href="ok.html">
+  <div class="element-item ok" data-category="state">
+   <h3 class="name">Oklahoma</h3>
+   <h3 class="abbr">ok</h3>
+ </div>
+</a>
+<a href="la.html">
+  <div class="element-item la" data-category="state">
+   <h3 class="name">Louisiana</h3>
+   <h3 class="abbr">la</h3>
+ </div>
+</a>
+<a href="ms.html">
+  <div class="element-item ms" data-category="state">
+   <h3 class="name">Mississippi</h3>
+   <h3 class="abbr">ms</h3>
+ </div>
+</a>
+<a href="al.html">
+  <div class="element-item al" data-category="state">
+   <h3 class="name">Alabama</h3>
+   <h3 class="abbr">al</h3>
+ </div>
+</a>
+<a href="ga.html">
+  <div class="element-item ga" data-category="state">
+   <h3 class="name">Georgia</h3>
+   <h3 class="abbr">ga</h3>
+ </div>
+</a>
+<div class="element-item zero" data-category="blank">
+ <h3 class="name">zero</h3>
+</div>
+<div class="element-item zero" data-category="blank">
+ <h3 class="name">zero</h3>
+</div>
+<div class="element-item zero" data-category="blank">
+ <h3 class="name">zero</h3>
+</div>
+<a href="hi.html">
+  <div class="element-item hi" data-category="state">
+   <h3 class="name">Hawaii</h3>
+   <h3 class="abbr">hi</h3>
+ </div>
+</a>
+<div class="element-item zero" data-category="blank">
+ <h3 class="name">zero</h3>
+</div>
+<div class="element-item zero" data-category="blank">
+ <h3 class="name">zero</h3>
+</div>
+<div class="element-item zero" data-category="blank">
+ <h3 class="name">zero</h3>
+</div>
+<a href="tx.html">
+  <div class="element-item tx" data-category="state">
+   <h3 class="name">Texas</h3>
+   <h3 class="abbr">tx</h3>
+ </div>
+</a>
+<div class="element-item zero" data-category="blank">
+ <h3 class="name">zero</h3>
+</div>
+<div class="element-item zero" data-category="blank">
+ <h3 class="name">zero</h3>
+</div>
+<div class="element-item zero" data-category="blank">
+ <h3 class="name">zero</h3>
+</div>
+<div class="element-item zero" data-category="blank">
+ <h3 class="name">zero</h3>
+</div>
+<a href="fl.html">
+  <div class="element-item fl" data-category="state">
+   <h3 class="name">Florida</h3>
+   <h3 class="abbr">fl</h3>
+ </div>
+</a>
+<div class="element-item zero" data-category="blank">
+ <h3 class="name">zero</h3>
+</div>
+<div class="element-item zero" data-category="blank">
+ <h3 class="name">zero</h3>
+</div>
+</div>
+</div>
+<div class="section group">
+  <div class="col span_4_of_4" style="margin-top: 25px;">
+    <div class="button-group sort-by-button-group">
+     <h3 style="text-align: left; float: left; color:#E51600;">Sort by:&nbsp;</h3>
+     <button class="button is-checked" data-sort-value="original-order" data-filter="*" style="border-right: 0px">Geography</button>
+     <button class="button" data-sort-value="name" data-filter=":not(.zero)" style="border-left: 0px">Name</button>
+   </div>
+ </div>
+</div>
+
+<div class="section group">
+  <div class="col span_1_of_6">
+  </div>
+  <div class="col span_2_of_3">
+    <h5>Familiar visuals, enhanced meaning.</h5>
+    <p>The same graphic language is shared across the flags, making it easy to see similarities and differences between the states. How do flags in the same geographic area compared to those in another part of the country? Do beliefs about disparities between coastal states and the midwest hold up? Many of the flags look exactly as you'd expect, but some may come as a surprise.
+    </p>
+    <p>Most existing flags share the same common visual cues: stripes, circles or polygons, and stars. You’ll find these familiar components in the flags of True Colors as well but their color, size, shape, and position are all determined by data.</p>
+  </div>
+</div>
+<div class="section group">
+  <div class="col span_1_of_4">
+    <img src="assets/background.gif" style="width: 100%; height: auto;">
+    <h3>Population</h3>
+  </div>
+  <div class="col span_1_of_4">
+    <img src="assets/stripe.gif" style="width: 100%; height: auto;">
+    <h3>Housing</h3>
+  </div>
+  <div class="col span_1_of_4">
+    <img src="assets/foreground.gif" style="width: 100%; height: auto;">
+    <h3>Economy</h3>
+  </div>
+  <div class="col span_1_of_4">
+    <img src="assets/star.gif" style="width: 100%; height: auto;">
+    <h3>Education</h3>
+    <br>
+  </div>
+</div>
+<div class="section group">
+  <div class="col span_1_of_6">
+  </div>
+  <div class="col span_2_of_3">
+    <h5>Reflecting the present and future of the US.</h5>
+    <p>Each layer of the flag corresponds to subjects that give an informative snapshot of life in that state. The background visualizes economics, the stripe shows housing, the circle or polygon represents economics, and the star indicates education.</p>
+    <p>The flags you see currently won’t always be representative of the United States. The country is always evolving, and certain attributes that are relevant this year will probably be drastically different a decade from now. If a state changes over time, shouldn’t its flag? As new data is released, the flags can be updated to ensure they always provide an accurate portrayal of the state they stand for.</p>
+  </div>
+</div>
+</div>
+</div>
+<div class="footer-div">
+  <div class="site-wrapper">
+    <div class="section group">
+      <div class="col span_1_of_6">
+      </div>
+      <div class="col span_3_of_8">
+        <h3 style="color:#efefef;text-align: left;">
+          About this Project
+        </h3>
+        <p style="font-size: 16px;line-height: 22px;color:#efefef;">
+          True Colors was created by <a href="http://o-j.co/">Olivia Johnson</a>, a graphic designer based in New England. The project began as a student assignment while attending the Maryland Institute College of Art under the direction of Kiel Mutschelknaus.</p>
+          <p style="font-size: 16px;line-height: 22px;color:#efefef;">
+            Typefaces used on this site are Six Caps, Yantramanav, and Roboto Mono. Please direct any questions, comments, or feedback to <a href= "mailto:olivia@o-j.co">olivia@o-j.co.</a></p>
+          </p>
+        </div>
+        <div class="col span_1_of_8">
+        </div>
+        <div class="col span_1_of_8">
+          <h3 style="color:#efefef;text-align: left;">
+            Share
+          </h3>
+          <h3 style="text-align: left;">
+           <a href="https://www.facebook.com/sharer.php?u=http://o-j.co/true-colors/" style="color:#efefef;">Facebook</a><br>
+           <a href="https://twitter.com/intent/tweet?url=http://o-j.co/true-colors/&text=See what happens when data determines the US state flags:&hashtags=truecolors" style="color:#efefef;">Twitter</a><br>
+           <a href="mailto:?subject=What if the US flags were based on data?&amp;body=See what happens when data determines the US state flags: http://o-j.co/true-colors/"
+           title="Share by Email" style="color:#efefef;">Email</a>
+         </h3>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+
+
+</body>
+</html>
+
+<!-- Fade ins
+-->
+
+
+<script type="text/javascript">
+
+  $(document).ready(function() {
+    var bgArray = ['alabama.svg', 'alaska.svg', 'arkansas.svg', 'california.svg', 'colorado.svg', 'connecticut.svg', 'dc.svg', 'delaware.svg', 'florida.svg', 'georgia.svg', 'hawaii.svg', 'idaho.svg', 'illinois.svg', 'indiana.svg', 'iowa.svg', 'kansas.svg', 'kentucky.svg', 'louisiana.svg', 'maine.svg', 'maryland.svg', 'massachusetts.svg', 'michigan.svg', 'minnesota.svg', 'mississippi.svg', 'missouri.svg', 'montana.svg', 'nebraska.svg', 'nevada.svg', 'new-hampshire.svg', 'new-jersey.svg', 'new-mexico.svg', 'new-york.svg', 'north-carolina.svg', 'north-dakota.svg', 'ohio.svg', 'oklahoma.svg', 'oregon.svg', 'pennsylvania.svg','rhode-island.svg', 'south-carolina.svg', 'south-dakota.svg', 'tennessee.svg', 'texas.svg', 'utah.svg', 'vermont.svg', 'virginia.svg', 'washington.svg', 'west-virginia.svg', 'wisconsin.svg', 'wyoming.svg'];
+    var bg = bgArray[Math.floor(Math.random() * bgArray.length)];
+    var path = 'assets/';
+    var imageUrl = path + bg;
+    $('.header-bg').css('background-image', 'url(' + imageUrl +')');
+  });
+</script>
+
+<!-- fades -->
+<script>
+  setTimeout(function() {
+    $("body").fadeTo(350, 1);
+  }, 200);
+</script>
+
+
+
+<script type="text/javascript">
+  // external js: isotope.pkgd.js
+
+
+// init Isotope
+
+var $grid = $('.grid').isotope({
+  itemSelector: '.element-item',
+  layoutMode: 'masonry',
+  getSortData: {
+    name: '.name',
+    symbol: '.symbol',
+    number: '.number parseInt',
+    category: '[data-category]',
+    weight: function( itemElem ) {
+      var weight = $( itemElem ).find('.weight').text();
+      return parseFloat( weight.replace( /[\(\)]/g, '') );
+    }
+  }
+});
+
+// bind sort button click
+$('.sort-by-button-group').on( 'click', 'button', function() {
+  var sortValue = $(this).attr('data-sort-value');
+  $grid.isotope({ sortBy: sortValue });
+});
+
+// change is-checked class on buttons
+$('.button-group').each( function( i, buttonGroup ) {
+  var $buttonGroup = $( buttonGroup );
+  $buttonGroup.on( 'click', 'button', function() {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    $( this ).addClass('is-checked');
+  });
+});
+
+// filter items on button click
+$('.button-group').on( 'click', 'button', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+});
+
+$(document).ready(function() {
+    // run test on initial page load
+    checkSize();
+
+    // run test on resize of the window
+    $(window).resize(checkSize);
+  });
+
+//Function to the css rule
+function checkSize(){
+  if ($(".button-group").css("display") == "none" ){
+        // filter items on button click
+        $grid.isotope({ sortBy : 'name' });
+        $grid.isotope({ filter: ':not(.zero)' });
+      }
+    }
+
+
+
+    $('a').click(function(e) {
+      e.preventDefault();
+      newLocation = this.href;
+      $('body').fadeOut(300, newpage);
+    });
+    function newpage() {
+      window.location = newLocation;
+    }
+
+  </script>
+  <script type="text/javascript">
+    $(".explore").click(function() {
+      $('html,body').animate({
+        scrollTop: $(".body-div").offset().top},
+        'slow');
+    });
+
+    var fixmeTop = $('#navBar').offset().top;       // get initial position of the element
+
+$(window).scroll(function() {                  // assign scroll event listener
+
+    var currentScroll = $(window).scrollTop(); // get current position
+
+    if (currentScroll >= fixmeTop) {           // apply position: fixed if you
+        $('#navBar').css({                      // scroll to that element or below it
+          position: 'fixed',
+          top: '0',
+          left: '0'
+        });
+    } else {                                   // apply position: static
+        $('#navBar').css({                      // if you scroll above it
+          position: 'absolute'
+        });
+      }
+
+    });
+  </script>
